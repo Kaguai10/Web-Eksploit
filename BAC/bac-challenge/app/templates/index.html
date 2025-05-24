@@ -1,8 +1,9 @@
-<!DOCTYPE html>
-<html>
-<head><title>Home</title></head>
-<body>
-    <h1>Selamat Datang di Broken Access Control Challenge</h1>
-    <a href="/login">Login</a> | <a href="/register">Register</a>
-</body>
-</html>         
+{% extends "base.html" %}
+{% block content %}
+<h1>Selamat datang, {{ username }}!</h1>
+<p>Silakan kunjungi profilmu: <a href="/user/id={{ user_id }}">Lihat Profil</a></p>
+{% if is_admin %}
+    <p><a href="/admin">Masuk ke Halaman Admin</a></p>
+{% endif %}
+<a href="/logout">Logout</a>
+{% endblock %}
