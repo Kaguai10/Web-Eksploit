@@ -1,7 +1,42 @@
 [
-    {
-        "id": 1,
-        "username": "admin",
-        "password": "admin123"
-    }
-]          
+  {
+    "id": 1,
+    "username": "Flag",
+    "password": "ft8tibdy5r7rxbou8uusaakstd6w8u"
+  },
+  {
+    "id": 2,
+    "username": "Arif",
+    "password": "i9769hu9yswi02jsy8a920"
+  },
+  {
+    "id": 3,
+    "username": "Fadel",
+    "password": "u9y9ugyfw7830hkss007e69"
+  },
+  {
+    "id": 4,
+    "username": "Hisyam",
+    "password": "u989yskajsg6720hxbska327"
+  },
+  {
+    "id": 5,
+    "username": "Fandika",
+    "password": "ig8co9b7w9390qydb9pAoaUUaI"
+  },
+  {
+    "id": 6,
+    "username": "Kaguai",
+    "password": "ipuwohnqpunz-q0w2i003kks-"
+  },
+  {
+    "id": 7,
+    "username": "Hacker",
+    "password": "ih9u9i0ajiyx8t7e9nkiao09"
+  },
+  {
+    "id": 8,
+    "username": "Username",
+    "password": "password"
+  }
+]                                                                                                                                                    
