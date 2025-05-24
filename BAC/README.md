@@ -30,5 +30,5 @@ Seorang pengguna biasa dapat:
 
 Setelah memahami dasar ini, kamu bisa menjelajahi:
 
-- 🧪 `challenges/`: Soal latihan berbasis CTF.
+- 🧪 `bac-challenge/`: Soal latihan berbasis CTF.
 - 📚 dan untuk pengetahuan lebih mendalam, baca lebih lanjut di sini
