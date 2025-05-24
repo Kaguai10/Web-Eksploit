@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head><title>Register</title></head>
-<body>
-    <h2>Register</h2>
-    <form method="POST">
-        Username: <input name="username"><br>
-        Password: <input type="password" name="password"><br>
-        <button type="submit">Register</button>
-    </form>
-</body>
-</html>
+{% extends "base.html" %}
+{% block content %}
+<h1>Register</h1>
+<form method="POST">
+    <input type="text" name="username" placeholder="Username" required><br>
+    <input type="password" name="password" placeholder="Password" required><br>
+    <button type="submit">Daftar</button>
+</form>
+<p class="message">{{ message }}</p>
+<p>Sudah punya akun? <a href="/login">Login di sini</a></p>
+{% endblock %}
