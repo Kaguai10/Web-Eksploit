@@ -1,2 +1,7 @@
-<h1>Admin Panel</h1>
-<p><b>FLAG:</b> {{ flag }}</p>
+{% extends "base.html" %}
+{% block content %}
+<h1>Halaman Admin</h1>
+<p>Selamat datang, Admin!</p>
+<p><strong>Flag Admin:</strong> <code>{{ flag }}</code></p>
+<a href="/logout">Logout</a>
+{% endblock %}
