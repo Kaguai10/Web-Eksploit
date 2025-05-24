@@ -1,4 +1,4 @@
-# 💉 SQL Injection (SQLi) — Mengenal dan Memahami Ancaman Tersembunyi di Balik Input
+# 💉 SQL Injection (SQLi)
 
 Selamat datang di **SQL Injection (SQLi)** — salah satu kerentanan paling umum dan berbahaya dalam dunia keamanan web. Di sini, kamu akan mempelajari bagaimana serangan ini bekerja, di mana biasanya ditemukan, serta bagaimana mengidentifikasinya melalui payload sederhana.
 
