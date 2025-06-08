@@ -1,4 +1,4 @@
-# 💣 Command Injection: Bahaya Eksekusi Perintah Jahat dari Input User
+# 💣 Command Injection
 
 Command Injection adalah salah satu kerentanan serius di aplikasi web yang memungkinkan penyerang menjalankan **perintah sistem operasi** melalui input yang tidak difilter dengan benar.
 
