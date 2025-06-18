@@ -82,7 +82,3 @@ Jika server memproses URL tersebut, maka kamu akan melihat log di server kamu â€
 - Coba arahkan ke IP lokal (`127.0.0.1`) dan lihat respon berbeda.
 - Respon lebih lambat saat mengakses domain tertentu? Bisa jadi itu SSRF.
 - Tidak ada respon? Uji dengan domain milik sendiri (blind SSRF).
-
----
-
-## ðŸ“š SSRF menjadi salah satu celah kritis di dunia nyata, seperti dalam insiden Capital One (2019). Memahami SSRF sangat penting karena bisa menjadi awal dari eksploitasi internal yang lebih dalam.
