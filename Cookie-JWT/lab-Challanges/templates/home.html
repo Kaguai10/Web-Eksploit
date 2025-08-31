@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script>
+    function cekFlag() {
+      const cookies = document.cookie.split(";").map(c => c.trim());
+      let admin = "0";
+      cookies.forEach(c => {
+        if (c.startsWith("admin=")) {
+          admin = c.split("=")[1];
+        }
+      });
+      if (admin === "1") {
+        alert("Flag{s3kar4ng_k4mu_taukan_cookie&jwt}");
+      } else {
+        alert("Anda bukan admin!");
+      }
+    }
+  </script>
+</head>
+<body class="hacker-bg">
+  <div class="login-box neon">
+    <h1>Selamat datang di rumah saya</h1>
+    <p>Tapi... Flag hanya untuk admin.</p>
+    <button onclick="cekFlag()">Cek Flag</button>
+  </div>
+</body>
+</html>
