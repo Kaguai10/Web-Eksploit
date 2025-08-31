@@ -1,0 +1,55 @@
+body.hacker-bg {
+  background: black;
+  color: #00ffcc;
+  font-family: 'Courier New', monospace;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px #00ffcc;
+}
+
+.neon h1, .neon p {
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+input {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #00ffcc;
+  border-radius: 5px;
+  background: black;
+  color: #00ffcc;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background: #00ffcc;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 0 0 15px #00ffcc;
+}
+
+.password-box {
+  position: relative;
+  display: inline-block;
+}
+
+.toggle-eye {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
