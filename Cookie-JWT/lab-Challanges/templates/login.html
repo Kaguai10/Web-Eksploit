@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Do you want a flag?</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+  <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body class="hacker-bg">
+  <div class="login-box neon">
+    <h1>Do you want a flag?</h1>
+    <p>Jika kamu mau flag masuk kerumah saya, kuncinya adalah <b>supersemar</b></p>
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+      <input type="text" name="username" placeholder="Username" required>
+      <div class="password-box">
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <span class="toggle-eye" onclick="togglePassword()">👁</span>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</body>
+</html>
