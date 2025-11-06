@@ -1,0 +1,27 @@
+:root{--bg:#ffffff;--text:#111827;--muted:#6b7280;--accent:#0ea5a3}
+*{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,Arial}
+body{margin:0;background:var(--bg);color:var(--text)}
+.container{max-width:1200px;margin:28px auto;padding:20px}
+.header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}
+.topbar{display:flex;gap:10px;align-items:center}
+.btn{background:transparent;border:1px solid #e6eef6;padding:8px 12px;border-radius:8px;color:var(--text);cursor:pointer;text-decoration:none}
+.primary{background:var(--accent);color:#fff;border:none;padding:8px 12px;border-radius:8px}
+.card{background:#ffffff;padding:18px;border-radius:8px;border:1px solid #eef2f7}
+.controls{display:flex;gap:8px;align-items:center;margin-bottom:12px}
+.layout{display:grid;grid-template-columns:1fr;gap:18px}
+.section{padding:14px}
+.table{width:100%;border-collapse:collapse;margin-top:12px}
+.table th,.table td{padding:10px;border-bottom:1px solid #f1f5f9;text-align:left}
+.table thead{background:#fbfcfe}
+.small{font-size:13px;color:var(--muted)}
+.footer{margin-top:16px;color:var(--muted);font-size:13px;text-align:center}
+.pager{display:flex;gap:8px;margin-top:12px;align-items:center}
+.search{padding:8px;border-radius:8px;border:1px solid #eef2f7}
+.export{font-size:13px}
+.card-center{width:480px;padding:28px;border-radius:10px;background:#ffffff;border:1px solid #eef2f7;box-shadow:0 8px 30px rgba(17,24,39,0.06);margin:0 auto}
+.input{width:100%;padding:12px;border-radius:10px;border:1px solid #e5e7eb;background:transparent;color:inherit;margin-top:10px}
+.btn-full{width:100%;padding:12px;border-radius:10px;border:none;margin-top:12px;background:var(--accent);color:#ffffff;font-weight:700;cursor:pointer}
+.title{font-size:22px;font-weight:700;margin-bottom:6px;text-align:center}
+.hint{font-size:13px;color:var(--muted);margin-top:8px;text-align:center}
+.alert{background:#fee2e2;padding:10px;border-radius:8px;margin-top:10px;color:#991b1b;text-align:center}
+.small-muted{font-size:13px;color:var(--muted);margin-top:12px;text-align:center}                                                                                                       
