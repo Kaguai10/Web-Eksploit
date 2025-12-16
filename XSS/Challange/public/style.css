@@ -1,0 +1,84 @@
+/* style.css - MODAL HOKI */
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --neon-color: #ff4dd2;
+  --neon-weak: rgba(255,77,210,0.18);
+}
+
+body{
+  font-family:system-ui,Segoe UI,Roboto,'Helvetica Neue',Arial;
+  background:#081029;
+  color:#fff;
+  min-height:100vh;
+  overflow:hidden;
+  position:relative
+}
+
+#bg-layer{
+  position:fixed;inset:0;
+  background-image:url('/images/bg.jpg');
+  background-size:cover;
+  background-position:center;
+  filter:brightness(0.38) saturate(1.05) contrast(1.05);
+  z-index:-3
+}
+
+.topbar{
+  position:relative;
+  padding:18px 28px;
+  display:flex;align-items:center;
+  z-index:5
+}
+.brand{display:flex;align-items:center;gap:14px}
+.logo{width:64px;height:64px;object-fit:contain;border-radius:8px;box-shadow:0 6px 22px rgba(0,0,0,0.6)}
+.titles h1{
+  font-size:28px;letter-spacing:2px;margin-bottom:4px;text-transform:uppercase;
+  text-shadow:0 0 8px rgba(255,255,255,0.02),0 0 18px var(--neon-color);
+  color:#fff
+}
+.subtitle{font-size:13px;color:#f0d9ff;opacity:0.9;text-shadow:0 0 10px var(--neon-weak)}
+
+.marquee{
+  width:100%;overflow:hidden;border-radius:6px;
+  background:linear-gradient(90deg,rgba(0,0,0,0.25),rgba(0,0,0,0.12));
+  padding:8px;margin:8px 28px;
+  box-shadow:0 8px 30px rgba(0,0,0,0.6);
+  z-index:2
+}
+.marquee-inner{
+  display:flex;gap:40px;white-space:nowrap;
+  animation:scroll 20s linear infinite;
+  color:#ffd9ff;font-weight:600;opacity:0.95
+}
+.marquee-inner span{padding-right:24px}
+@keyframes scroll{from{transform:translateX(100%)}to{transform:translateX(-100%)}}
+
+.game-area{padding:30px 20px;display:flex;flex-direction:column;align-items:center;gap:18px;z-index:2}
+.machine-wrap{display:flex;flex-direction:column;align-items:center;gap:14px;backdrop-filter:blur(6px);padding:18px;border-radius:14px}
+.machine{display:flex;gap:12px;background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.01));padding:20px;border-radius:16px;box-shadow:0 16px 50px rgba(0,0,0,0.6)}
+.reel{width:120px;height:160px;display:flex;align-items:center;justify-content:center;font-size:78px;background:linear-gradient(180deg,#0f0812,#221226);border-radius:12px;box-shadow:inset 0 -8px 18px rgba(0,0,0,.45);color:#ffe6f7;text-shadow:0 2px 8px rgba(0,0,0,0.7)}
+
+.controls{display:flex;flex-direction:column;align-items:center;gap:8px}
+#spinBtn{padding:12px 22px;border-radius:10px;border:none;background:linear-gradient(180deg,#ffb400,#ff8a00);font-weight:800;cursor:pointer;box-shadow:0 8px 22px rgba(255,138,0,0.12), 0 2px 6px rgba(0,0,0,0.5)}
+.status{font-size:14px;color:#ffdff6}
+
+#coins{position:fixed;inset:0;pointer-events:none;z-index:1;overflow:hidden}
+.coin{
+  position:absolute;width:44px;height:44px;border-radius:50%;
+  background:radial-gradient(circle at 30% 25%, #fff7b8 0%, #f6d24c 15%, #d49b1a 55%, #b07b12 100%);
+  box-shadow:0 6px 18px rgba(0,0,0,0.55), inset 0 -6px 10px rgba(255,255,255,0.12);
+  border:2px solid rgba(0,0,0,0.25);
+}
+.coin:after{
+  content:'';position:absolute;inset:6% 6% 55% 55%;border-radius:50%;
+  background:linear-gradient(135deg, rgba(255,255,255,0.9), rgba(255,255,255,0.06));
+  filter:blur(0.6px);opacity:0.9
+}
+.coin:before{
+  content:'';position:absolute;left:6%;right:6%;top:30%;height:10%;border-radius:2px;
+  background:linear-gradient(90deg, rgba(0,0,0,0.06), rgba(255,255,255,0.06));
+  opacity:0.25
+}
+
+@media (max-width:900px){ .reel{width:92px;height:120px;font-size:56px} .logo{width:52px;height:52px} }
+@media (max-width:600px){ .reel{width:70px;height:100px;font-size:46px} .titles h1{font-size:18px} }
