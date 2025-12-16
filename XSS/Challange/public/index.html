@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MODAL HOKI — CTF</title>
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div id="bg-layer"></div>
+  <header class="topbar">
+    <div class="brand">
+      <img src="/images/logo.png" alt="Modal Hoki" class="logo" />
+      <div class="titles">
+        <h1>MODAL HOKI</h1>
+        <div class="subtitle">Dapatkan 777 — Dan Dapatkan Flag</div>
+      </div>
+    </div>
+  </header>
+
+  <main class="game-area">
+    <div class="marquee">
+      <div class="marquee-inner" id="marqueeInner"></div>
+    </div>
+
+    <div class="machine-wrap">
+      <div class="machine">
+        <div class="reel" id="r1">0</div>
+        <div class="reel" id="r2">0</div>
+        <div class="reel" id="r3">0</div>
+      </div>
+
+      <div class="controls">
+        <button id="spinBtn">Putar</button>
+        <div id="status" class="status"></div>
+      </div>
+    </div>
+
+    <div id="coins" aria-hidden="true"></div>
+  </main>
+
+  <script src="/app.js"></script>
+</body>
+</html>
