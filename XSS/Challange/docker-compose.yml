@@ -1,0 +1,11 @@
+version: "3.9"
+
+services:
+  judol-ctf:
+    build: .
+    container_name: judol-ctf
+    ports:
+      - "4443:4443"
+    environment:
+      - PORT=4443
+    restart: unless-stopped
