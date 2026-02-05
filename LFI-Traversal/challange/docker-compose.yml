@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  lfi-challenge:
+    build: .
+    container_name: lfi_challenge
+    ports:
+      - "8080:80"
+    restart: unless-stopped
