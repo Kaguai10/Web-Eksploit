@@ -1,0 +1,4 @@
+body{background:#020617;color:#e5e7eb;font-family:sans-serif;display:flex;justify-content:center;align-items:center;height:100vh;}
+.container{background:#020617;padding:30px 40px;border-radius:14px;box-shadow:0 0 40px rgba(0,0,0,.6);width:420px;text-align:center;}
+.nav a{color:#22c55e;text-decoration:none;margin:0 10px;font-weight:600;}
+.content{margin-top:20px;padding:20px;border:1px solid #1e293b;border-radius:10px;}
