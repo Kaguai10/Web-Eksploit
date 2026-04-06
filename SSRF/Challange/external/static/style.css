@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #020617;
+    color: #e2e8f0;
+}
+
+.container {
+    max-width: 700px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+input {
+    width: 70%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background: #22c55e;
+    color: white;
+    border-radius: 8px;
+}
+
+.output {
+    margin-top: 20px;
+    text-align: left;
+    background: #0f172a;
+    padding: 20px;
+    border-radius: 10px;
+}
