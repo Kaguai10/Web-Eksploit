@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Web Fetcher</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Web Fetcher</h1>
+
+        <form method="POST">
+            <input type="text" name="url" placeholder="http://example.com" required>
+            <button type="submit">Fetch</button>
+        </form>
+
+        <div class="output">
+            <pre>{{ output }}</pre>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
