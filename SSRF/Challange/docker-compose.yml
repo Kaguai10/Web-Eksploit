@@ -1,0 +1,20 @@
+version: '3'
+
+services:
+  web_external:
+    build: ./external
+    ports:
+      - "8001:8080"
+    restart: always
+    networks:
+      - web-network
+
+  web_internal:
+    build: ./internal
+    restart: always
+    networks:
+      - web-network
+
+networks:
+  web-network:
+    driver: bridge
