@@ -17,7 +17,7 @@ Modul ini dirancang untuk mempelajari berbagai jenis kerentanan keamanan pada ap
 | [File Upload](./FileUpload/) | Unggahan File Berbahaya | Eksploitasi fitur unggah file tanpa validasi yang memadai | [Challange](./FileUpload/Challange/) |
 | [LFI & Path Traversal](./LFI-Traversal/) | Akses File Lokal | Pembacaan file sensitif melalui manipulasi path file | [challange](./LFI-Traversal/challange/) |
 | [SQL Injection](./SQLi/) | Injeksi Perintah SQL | Penyisipan perintah SQL melalui input pengguna | [sqli-challange](./SQLi/sqli-challange/) |
-| [SSRF](./SSRF/) | Server-Side Request Forgery | Memanfaatkan server untuk membuat permintaan HTTP ke sumber daya internal | [Challange](./SSRF/challange) |
+| [SSRF](./SSRF/) | Server-Side Request Forgery | Memanfaatkan server untuk membuat permintaan HTTP ke sumber daya internal | [Challange](./SSRF/Challange) |
 | [SSTI](./SSTI/) | Server-Side Template Injection | Eksploitasi template engine untuk eksekusi kode di server | [ssti_challange](./SSTI/ssti_challange/) |
 | [XSS](./XSS/) | Cross-Site Scripting | Penyisipan skrip berbahaya ke halaman web | [Challange](./XSS/Challange/) |
 
