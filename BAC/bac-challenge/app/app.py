@@ -17,7 +17,14 @@ def save_users(users):
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    if 'user_id' not in session:
+        return redirect('/login')
+    return render_template('index.html', username=session['username'], user_id=session['user_id'], is_admin=session['user_id'] == 1)
+
+@app.route('/logout')
+def logout():
+    session.clear()
+    return redirect('/login')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
